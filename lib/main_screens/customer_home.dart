@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import './category.dart';
 import './home.dart';
 
 class CustomerHomeScreen extends StatefulWidget {
@@ -13,7 +14,7 @@ class _CustomerHomeScreenState extends State<CustomerHomeScreen> {
   int _selectedIndex = 0;
   final List<Widget> _tabs = const [
     Center(child: HomeScreen()),
-    Center(child: Text('category screen')),
+    Center(child: CategoryScreen()),
     Center(child: Text('stores screen')),
     Center(child: Text('cart screen')),
     Center(child: Text('profile screen')),
